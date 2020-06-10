@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+.col-md-center {
+	@include respond-to("md") {
+		float: none;
+		margin: 0 auto;
+	}
+}
+.col-sm-center {
+	@include respond-to("sm") {
+		float: none;
+		margin: 0 auto;
+	}
+}
+.col-xs-center {
+	@include respond-to("xs") {
+		float: none;
+		margin: 0 auto;
+	}
+}
+
+.col-center {
+	float: none;
+	margin: auto !important;
+}
+
+.no-gutters {
+	padding: 0;
+	margin: 0;
+	.container,
+	.container-fluid {
+		padding: 0;
+		margin: 0;
+	}
+	.row {
+		padding: 0;
+		margin: 0;
+	}
+	div[class*="col-"] {
+		padding: 0;
+		margin: 0;
+	}
+}
