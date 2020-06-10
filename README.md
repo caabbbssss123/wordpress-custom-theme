@@ -1,4 +1,4 @@
-Wordpress Custom Theme
+# Wordpress Custom Theme
 
 Instructions on how to install:
 
