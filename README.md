@@ -7,6 +7,6 @@ Instructions on how to install:
 3. Edit style.css with the details needed
 4. Edit functions.php with the details needed
 5. Activate theme on Wordpress admin
-6. Active carbon fields plugin
+6. Activate carbon fields plugin
 
 Done!
