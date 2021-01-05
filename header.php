@@ -48,7 +48,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span> 
           </button>
-          <a class="navbar-brand" href="<?=get_home_url()?>"><?=carbon_get_theme_option('brand_name')?></a>
+          <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><?php echo carbon_get_theme_option('brand_name'); ?></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <?php
