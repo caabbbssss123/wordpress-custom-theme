@@ -1,12 +1,11 @@
 <?php
 use Carbon_Fields\Container;
-use Carbon_Fields\Complex_Container;
 use Carbon_Fields\Field;
 
-/*
-	Global ==========================================================
-*/
-Container::make('theme_options', 'Global Settings')
-->add_tab(__('HEADER'), array(
-	Field::make('image', 'header_brand_logo', 'Brand Logo')->set_width(20)->set_value_type('url'),
-));
+add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
+function crb_attach_theme_options() {
+  Container::make( 'theme_options', __( 'Theme Options' ) )
+  ->add_fields( array(
+      Field::make( 'text', 'crb_text', 'Text Field' ),
+  ));
+}
